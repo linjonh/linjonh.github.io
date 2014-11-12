@@ -1,0 +1,73 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ #headline {
+     padding: 0.8em;
+     color: white;
+     font-family: Roboto, helvetica, arial, sans-serif;
+     background-color: black;
+     background-image: url(head.jpg);
+     background-size: cover;
+ }
+ #blur {
+     /*background-color: #0099cc;*/
+ }
+ #download {
+     /*background-color: #cc0099;*/
+     
+     margin-bottom: 50px;
+ }
+ @media screen and (min-width: 600px) {
+     #blur {
+         float: left;
+         font-weight: 200;
+         width: 50%;
+         font-size: 18px;
+         box-sizing: border-box;
+         padding-right: 10px;
+     }
+     #download {
+         float: right;
+         padding: 20px;
+         width: 50%;
+         box-sizing: border-box;
+         font-weight: 300;
+     }
+     /*  #headline br {
+           clear: both;
+       } */
+ }
+ #headline h1 {
+     line-height: 1em;
+     margin-top: 10px;
+ }
+ #download h1 {
+     text-align: center;
+ }
+ #download button {
+     width: 100%;
+     padding: 0.5em;
+     font-size: 18px;
+     box-sizing: border-box;
+     background-color: #ff00ff;
+     border: none;
+ }
+ #download button:hover{
+ 	background-color: #dcdcdc;
+ 	border: none;
+ }
+ #download button:active{
+ 	background-color: #ff0000;
+ 	border: none;
+ }  
+ #app2 {
+     margin-top: 20px;
+ }
+ br {
+     clear: both;
+ }
+ .container {
+     margin: auto;
+     max-width: 800px;
+ }
