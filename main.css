@@ -1,24 +1,32 @@
  body {
      margin: 0;
      padding: 0;
+     background-color: #EBEBEB;
+     font-family: Roboto, helvetica, arial, sans-serif;
  }
  #headline {
      padding: 0.8em;
      color: white;
-     font-family: Roboto, helvetica, arial, sans-serif;
      background-color: black;
-     background-image: url(head.jpg);
+     background-image: url(headbg.jpg);
+     /*background-color: #1D49E8;*/
+     
      background-size: cover;
  }
- #blur {
-     /*background-color: #0099cc;*/
+ #title {
+     font-size: 30px;
  }
  #download {
      /*background-color: #cc0099;*/
      
+     background-color: rgba(57, 177, 164, 0.7);
+     border-radius: 10px;
      margin-bottom: 50px;
+     padding: 20px;
  }
  @media screen and (min-width: 600px) {
+     /*===>start*/
+     
      #blur {
          float: left;
          font-weight: 200;
@@ -29,7 +37,6 @@
      }
      #download {
          float: right;
-         padding: 20px;
          width: 50%;
          box-sizing: border-box;
          font-weight: 300;
@@ -37,30 +44,81 @@
      /*  #headline br {
            clear: both;
        } */
+     
+     .section-left {
+         float: left;
+         width: 80%;
+         box-sizing: border-box;
+         padding-right: 10px;
+     }
+     .g-link {
+         float: right;
+         width: 20%;
+         margin-top: 50px;
+         /*padding-left: 100px;*/
+         /*margin-left: 50px*/
+         
+         box-sizing: border-box;
+     }
+ }
+ /*<===end*/
+ 
+ #title {
+     font-weight: 200;
+     font-size: 60px
+ }
+ #section1, #section2 {} #section1 h1, #section2 h1 {
+     font-weight: 200;
+     font-size: 36px
  }
  #headline h1 {
+     /*font-weight: 800;*/
+     
      line-height: 1em;
      margin-top: 10px;
  }
  #download h1 {
      text-align: center;
+     padding: 0;
+     margin-top: 0;
  }
  #download button {
      width: 100%;
      padding: 0.5em;
      font-size: 18px;
      box-sizing: border-box;
-     background-color: #ff00ff;
+     border-radius: 20px 20px;
+     box-shadow: 3px 3px 5px black;
+     /*background-color: rgba(105, 170, 70,1);*/
+     
+     background-color: hsl(0, 100%, 40%);
+     /*border-color: rgba(150, 150, 200);*/
+     
+     border: none;
+     /*outline is used to delete focus state rectangle*/
+     
+     outline: none;
+     /*color is for text color*/
+     
+     color: white;
+ }
+ #download button:hover {
+     background-color: #dcdcdc;
+     /*border-color: rgba(150, 150, 250, 0.8);*/
+     
+     color: black;
      border: none;
  }
- #download button:hover{
- 	background-color: #dcdcdc;
- 	border: none;
+ #download button:active {
+     background-color: #629A43;
+     /*border-color: rgba(150, 150, 250, 0.8);*/
+     
+     color: white;
+     border: none;
  }
- #download button:active{
- 	background-color: #ff0000;
- 	border: none;
- }  
+ #download button:focus {
+     border: none;
+ }
  #app2 {
      margin-top: 20px;
  }
@@ -70,4 +128,14 @@
  .container {
      margin: auto;
      max-width: 800px;
+     padding-right: 5%;
+     padding-left: 5%;
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+ footer {
+     text-align: center;
+     background-color: #1D49E8;
+     color: white;
+     padding: 0.5em;
  }
