@@ -1,4 +1,4 @@
- body {
+ html, body {
      margin: 0;
      padding: 0;
      background-color: #EBEBEB;
@@ -13,8 +13,13 @@
      
      background-size: cover;
  }
+ @media screen and (max-width: 600px) {
+     #title {
+         font-size: 30px;
+     }
+ }
  #title {
-     font-size: 30px;
+     font-weight: 100;
  }
  #download {
      /*background-color: #cc0099;*/
@@ -27,6 +32,10 @@
  @media screen and (min-width: 600px) {
      /*===>start*/
      
+     #title {
+         font-weight: 200;
+         font-size: 60px
+     }
      #blur {
          float: left;
          font-weight: 200;
@@ -63,10 +72,6 @@
  }
  /*<===end*/
  
- #title {
-     font-weight: 200;
-     font-size: 60px
- }
  #section1, #section2 {} #section1 h1, #section2 h1 {
      font-weight: 200;
      font-size: 36px
@@ -110,7 +115,9 @@
      border: none;
  }
  #download button:active {
-     background-color: #629A43;
+     /*background-color: #629A43;*/
+     
+     background-color: hsl(0, 100%, 40%);
      /*border-color: rgba(150, 150, 250, 0.8);*/
      
      color: white;
@@ -138,4 +145,29 @@
      background-color: #1D49E8;
      color: white;
      padding: 0.5em;
+     font-size: 100;
+     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+ }
+ footer a {
+     color: white;
+ }
+ .section-left img {
+     width: 50%;
+     float: left;
+     padding:1%;
+     box-sizing: border-box;
+     margin: 0;
+ }
+ /* background */
+ 
+ #s1bg {
+     background-color: #009688;
+     margin: 0;
+     padding-top: 0.8em;
+     padding-bottom: 3em;
+ }
+ #s2bg {
+     background-color: #1FCD2C;
+     padding-bottom: 3em;
+     padding-top: 0.8em;
  }
