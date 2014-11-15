@@ -15,18 +15,18 @@
  }
  @media screen and (max-width: 600px) {
      #title {
-         font-size: 30px;
+         font-size: 48px;
      }
  }
  #title {
      font-weight: 100;
  }
  #download {
-     /*background-color: #cc0099;*/
      
      background-color: rgba(57, 177, 164, 0.7);
      border-radius: 10px;
-     margin-bottom: 50px;
+     margin-top: 50px;
+     margin-bottom: 30px;
      padding: 20px;
  }
  @media screen and (min-width: 600px) {
@@ -170,4 +170,7 @@
      background-color: #1FCD2C;
      padding-bottom: 3em;
      padding-top: 0.8em;
+ }
+ #section2{
+    padding-top: 1em;
  }
