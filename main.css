@@ -13,21 +13,20 @@
      
      background-size: cover;
  }
- @media screen and (max-width: 600px) {
-     #title {
-         font-size: 48px;
-     }
- }
  #title {
      font-weight: 100;
  }
  #download {
-     
      background-color: rgba(57, 177, 164, 0.7);
      border-radius: 10px;
-     margin-top: 50px;
      margin-bottom: 30px;
      padding: 20px;
+     margin-top: 50px;
+ }
+ @media screen and (max-width: 600px) {
+     #title {
+         font-size: 48px;
+     }
  }
  @media screen and (min-width: 600px) {
      /*===>start*/
@@ -49,6 +48,7 @@
          width: 50%;
          box-sizing: border-box;
          font-weight: 300;
+         margin-top: 0;
      }
      /*  #headline br {
            clear: both;
@@ -72,7 +72,7 @@
  }
  /*<===end*/
  
- #section1, #section2 {} #section1 h1, #section2 h1 {
+ #section1 h1, #section2 h1 {
      font-weight: 200;
      font-size: 36px
  }
@@ -154,23 +154,23 @@
  .section-left img {
      width: 50%;
      float: left;
-     padding:1%;
+     padding: 1%;
      box-sizing: border-box;
-     margin: 0;
+     margin-bottom: 1em;
  }
  /* background */
  
  #s1bg {
-     background-color: #009688;
+     background-color: #FFF8E1;
      margin: 0;
      padding-top: 0.8em;
      padding-bottom: 3em;
  }
  #s2bg {
-     background-color: #1FCD2C;
+     background-color: #BBDEFB;
      padding-bottom: 3em;
      padding-top: 0.8em;
  }
- #section2{
-    padding-top: 1em;
+ #section2 {
+     padding-top: 1em;
  }
