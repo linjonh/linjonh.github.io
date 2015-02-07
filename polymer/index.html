@@ -13,7 +13,7 @@
     <link rel="import" href="components/paper-tabs/paper-tabs.html">
     <link rel="import" href="components/core-icon-button/core-icon-button.html">
     <link rel="import" href="components/paper-icon-button/paper-icon-button.html">
-  
+
     <link rel="import" href="post-card.html">
 
     <link rel="stylesheet" href="main.css">
@@ -21,6 +21,19 @@
 </head>
 
 <body fullbleed vertical layout unresolved>
+    <script>
+    function supportsImports() {
+        return 'import' in document.createElement('link');
+    }
+
+    if (supportsImports()) {
+        // Good to go!
+        alert('supportsImports');
+    } else {
+        alert('not supportsImports');
+        // Use other libraries/require systems to load files.
+    }
+    </script>
     <core-header-panel flex mode="stander">
 
         <core-toolbar class="medium-tall">
@@ -42,12 +55,12 @@
 
         <div>my content</div>
         <div>main page content will go here</div>
-      <post-card src="images/avatar-01.svg"></post-card>
-      <post-card src="images/avatar-02.svg"></post-card>
-      <post-card src="images/avatar-03.svg"></post-card>
-      <post-card src="images/avatar-04.svg"></post-card>
-    
-       
+        <post-card src="images/avatar-01.svg"></post-card>
+        <post-card src="images/avatar-02.svg"></post-card>
+        <post-card src="images/avatar-03.svg"></post-card>
+        <post-card src="images/avatar-04.svg"></post-card>
+
+
     </core-header-panel>
 
 
