@@ -1,0 +1,182 @@
+ html, body {
+     margin: 0;
+     padding: 0;
+     background-color: #EBEBEB;
+     font-family: Roboto, helvetica, arial, sans-serif;
+ }
+ #headline {
+     padding: 0.8em;
+     color: white;
+     background-color: black;
+     background-image: url(headbg.jpg);
+     /*background-color: #1D49E8;*/
+     
+     background-size: cover;
+ }
+ #title {
+     font-weight: 100;
+ }
+ #download {
+     background-color: rgba(57, 177, 164, 0.7);
+     border-radius: 10px;
+     margin-bottom: 30px;
+     padding: 20px;
+     margin-top: 50px;
+ }
+ @media screen and (max-width: 600px) {
+     #title {
+         font-size: 48px;
+     }
+     #googleAds{
+        display: none;
+     }
+ }
+ @media screen and (min-width: 600px) {
+     /*===>start*/
+      #googleAds{
+        display: block;
+        /*background-color: red;*/
+     }
+     #title {
+         font-weight: 200;
+         font-size: 60px
+     }
+     #blur {
+         float: left;
+         font-weight: 200;
+         width: 50%;
+         font-size: 18px;
+         box-sizing: border-box;
+         padding-right: 10px;
+     }
+     #download {
+         float: right;
+         width: 50%;
+         box-sizing: border-box;
+         font-weight: 300;
+         margin-top: 0;
+     }
+     /*  #headline br {
+           clear: both;
+       } */
+     
+     .section-left {
+         float: left;
+         width: 80%;
+         box-sizing: border-box;
+         padding-right: 10px;
+     }
+     .g-link {
+         float: right;
+         width: 20%;
+         margin-top: 50px;
+         /*padding-left: 100px;*/
+         /*margin-left: 50px*/
+         
+         box-sizing: border-box;
+     }
+ }
+ /*<===end*/
+ 
+ #section1 h1, #section2 h1 {
+     font-weight: 200;
+     font-size: 36px
+ }
+ #headline h1 {
+     /*font-weight: 800;*/
+     
+     line-height: 1em;
+     margin-top: 10px;
+ }
+ #download h1 {
+     text-align: center;
+     padding: 0;
+     margin-top: 0;
+ }
+ #download button {
+     width: 100%;
+     padding: 0.5em;
+     font-size: 18px;
+     box-sizing: border-box;
+     border-radius: 20px 20px;
+     box-shadow: 3px 3px 5px black;
+     /*background-color: rgba(105, 170, 70,1);*/
+     
+     background-color: hsl(0, 100%, 40%);
+     /*border-color: rgba(150, 150, 200);*/
+     
+     border: none;
+     /*outline is used to delete focus state rectangle*/
+     
+     outline: none;
+     /*color is for text color*/
+     
+     color: white;
+ }
+ #download button:hover {
+     background-color: #dcdcdc;
+     /*border-color: rgba(150, 150, 250, 0.8);*/
+     
+     color: black;
+     border: none;
+ }
+ #download button:active {
+     /*background-color: #629A43;*/
+     
+     background-color: hsl(0, 100%, 40%);
+     /*border-color: rgba(150, 150, 250, 0.8);*/
+     
+     color: white;
+     border: none;
+ }
+ #download button:focus {
+     border: none;
+ }
+ #app2 {
+     margin-top: 20px;
+ }
+ br {
+     clear: both;
+ }
+ .container {
+     margin: auto;
+     max-width: 800px;
+     padding-right: 5%;
+     padding-left: 5%;
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+ footer {
+     text-align: center;
+     background-color: #1D49E8;
+     color: white;
+     padding: 0.5em;
+     font-size: 100;
+     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+ }
+ footer a {
+     color: white;
+ }
+ .section-left img {
+     width: 50%;
+     float: left;
+     padding: 1%;
+     box-sizing: border-box;
+     margin-bottom: 1em;
+ }
+ /* background */
+ 
+ #s1bg {
+     background-color: #FFF8E1;
+     margin: 0;
+     padding-top: 0.8em;
+     padding-bottom: 3em;
+ }
+ #s2bg {
+     background-color: #BBDEFB;
+     padding-bottom: 3em;
+     padding-top: 0.8em;
+ }
+ #section2 {
+     padding-top: 1em;
+ }
