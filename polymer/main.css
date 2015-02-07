@@ -24,6 +24,9 @@ core-toolbar {
     user-select: none;
     text-transform: uppercase;
 }
+core-drawer-panel:not([narrow]) #navicon{
+    display: none;
+}
 @media( min-width: 500px){
 
 }

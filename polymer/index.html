@@ -15,54 +15,65 @@
     <link rel="import" href="components/paper-icon-button/paper-icon-button.html">
 
     <link rel="import" href="post-card.html">
-
-    <link rel="stylesheet" href="main.css">
+    <link rel="import" href="components/core-drawer-panel/core-drawer-panel.html">
+    <link rel="import" href="components/core-menu/core-menu.html">
+    <Hlink rel="import" href="components/core-item/core-item.html">
+        <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body fullbleed vertical layout unresolved>
     <script>
-    function supportsImports() {
-        return 'import' in document.createElement('link');
-    }
+    // function supportsImports() {
+    //     return 'import' in document.createElement('link');
+    // }
 
-    if (supportsImports()) {
-        // Good to go!
-        alert('supportsImports');
-    } else {
-        alert('not supportsImports');
-        // Use other libraries/require systems to load files.
-    }
+    // if (supportsImports()) {
+    //     // Good to go!
+    //     alert('supportsImports');
+    // } else {
+    //     alert('not supportsImports');
+    //     // Use other libraries/require systems to load files.
+    // }
     </script>
-    <core-header-panel flex mode="stander">
+    <core-drawer-panel id="drawerPanel">
+        <!-- drawer-menu -->
+        <core-header-panel drawer>
+            <core-toolbar id="navheader">
+                Menu
+            </core-toolbar>
+            <core-menu>
+                <core-item label="one"></core-item>
+                <core-item label="one"></core-item>
+            </core-menu>
+        </core-header-panel>
+        <!-- drawer-content -->
+        <core-header-panel main mode="stander">
+            <core-toolbar id="mainheader" class="medium-tall">
+                <paper-tabs class="bottom fit" id="tabs" selected="all" self-end>
+                    <paper-tab name="all">All</paper-tab>
+                    <paper-tab name="favorites">Favorites</paper-tab>
+                    <paper-tab name="my">my</paper-tab>
+                    <paper-tab name="profile">profile</paper-tab>
 
-        <core-toolbar class="medium-tall">
-            <paper-tabs class="bottom fit" id="tabs" selected="all" self-end>
-                <paper-tab name="all">All</paper-tab>
-                <paper-tab name="favorites">Favorites</paper-tab>
-                <paper-tab name="my">my</paper-tab>
-                <paper-tab name="profile">profile</paper-tab>
+                </paper-tabs>
+                <paper-icon-button id="navicon" icon="menu">
+                </paper-icon-button>
+                <div indent>My App</div>
+                <span flex></span>
+                <paper-icon-button icon="search">
+                </paper-icon-button>
 
-            </paper-tabs>
-            <paper-icon-button icon="menu">
-            </paper-icon-button>
-            <div indent>My App</div>
-            <span flex></span>
-            <paper-icon-button icon="search">
-            </paper-icon-button>
-
-        </core-toolbar>
-
-        <div>my content</div>
-        <div>main page content will go here</div>
-        <post-card src="images/avatar-01.svg"></post-card>
-        <post-card src="images/avatar-02.svg"></post-card>
-        <post-card src="images/avatar-03.svg"></post-card>
-        <post-card src="images/avatar-04.svg"></post-card>
-
-
-    </core-header-panel>
-
+            </core-toolbar>
+            <!-- paper-content -->
+            <div>my content</div>
+            <div>main page content will go here</div>
+            <post-card src="images/avatar-01.svg"></post-card>
+            <post-card src="images/avatar-02.svg"></post-card>
+            <post-card src="images/avatar-03.svg"></post-card>
+            <post-card src="images/avatar-04.svg"></post-card>
+        </core-header-panel>
+    </core-drawer-panel>
 
 
     <script>
@@ -72,6 +83,7 @@
         console.log("Selected: " + tabs.selected);
     });
     </script>
+    <script src="drawer.js"></script>
 </body>
 
 </html>
