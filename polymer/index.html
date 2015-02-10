@@ -17,8 +17,31 @@
     <link rel="import" href="post-card.html">
     <link rel="import" href="components/core-drawer-panel/core-drawer-panel.html">
     <link rel="import" href="components/core-menu/core-menu.html">
-    <Hlink rel="import" href="components/core-item/core-item.html">
-        <link rel="stylesheet" href="main.css">
+    <link rel="import" href="components/core-item/core-item.html">
+    <link rel="import" href="components/paper-item/paper-item.html">
+    <!-- <link rel="import" href="components/core-scaffold/core-scaffold.html"> -->
+    <!-- used <core-scaffold> for slide menu
+<core-scaffold>
+
+  <core-header-panel navigation flex>
+    <core-toolbar id="navheader">
+      <span>Menu</span>
+    </core-toolbar>
+    <core-menu>
+      <core-item label="One"></core-item>
+      <core-item label="Two"></core-item>
+    </core-menu>
+  </core-header-panel>
+  
+  <span tool>Title</span>
+
+  <div class="content">
+      If drawer is hidden, press button to display drawer.
+  </div>
+</core-scaffold>
+
+     -->
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
@@ -38,13 +61,13 @@
     </script>
     <core-drawer-panel id="drawerPanel">
         <!-- drawer-menu -->
-        <core-header-panel drawer>
-            <core-toolbar id="navheader">
+        <core-header-panel drawer id="drawerMenu">
+            <core-toolbar id="navheader" class="medium-tall">
                 Menu
             </core-toolbar>
             <core-menu>
-                <core-item label="one"></core-item>
-                <core-item label="one"></core-item>
+                <paper-item label="one">one</paper-item>
+                <paper-item label="two">two</paper-item>
             </core-menu>
         </core-header-panel>
         <!-- drawer-content -->
@@ -66,20 +89,38 @@
 
             </core-toolbar>
             <!-- paper-content -->
-            <div>my content</div>
-            <div>main page content will go here</div>
-            <post-card src="images/avatar-01.svg"></post-card>
-            <post-card src="images/avatar-02.svg"></post-card>
-            <post-card src="images/avatar-03.svg"></post-card>
-            <post-card src="images/avatar-04.svg"></post-card>
+            <div id="tap_content" horizontal>
+                <div>my content</div>
+                <div>main page content will go here</div>
+                <post-card src="images/avatar-01.svg"></post-card>
+                <post-card src="images/avatar-02.svg"></post-card>
+                <post-card src="images/avatar-03.svg"></post-card>
+                <post-card src="images/avatar-04.svg"></post-card>
+            </div>
         </core-header-panel>
     </core-drawer-panel>
 
 
     <script>
     var tabs = document.querySelector('paper-tabs');
-
+    var tapContentEl = document.querySelector('#tap_content');
     tabs.addEventListener('core-select', function() {
+        switch (tabs.selected) {
+            case 'all':
+                // tapContentEl.innerHTML = "selected is :" + tabs.selected+"<post-card src='images/avatar-03.svg'></post-card>";
+                break;
+            case 'my':
+                tapContentEl.innerHTML = "selected is :" + tabs.selected;
+                break;
+
+            case 'favorites':
+                tapContentEl.innerHTML = "selected is :" + tabs.selected;
+                break;
+
+            case 'profile':
+                tapContentEl.innerHTML = "selected is :" + tabs.selected;
+                break;
+        }
         console.log("Selected: " + tabs.selected);
     });
     </script>
