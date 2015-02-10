@@ -17,8 +17,9 @@
     <link rel="import" href="post-card.html">
     <link rel="import" href="components/core-drawer-panel/core-drawer-panel.html">
     <link rel="import" href="components/core-menu/core-menu.html">
-    <Hlink rel="import" href="components/core-item/core-item.html">
-        <link rel="stylesheet" href="main.css">
+    <link rel="import" href="components/core-item/core-item.html">
+    <link rel="import" href="components/paper-item/paper-item.html">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
@@ -39,12 +40,12 @@
     <core-drawer-panel id="drawerPanel">
         <!-- drawer-menu -->
         <core-header-panel drawer>
-            <core-toolbar id="navheader">
+            <core-toolbar id="navheader" class="medium-tall">
                 Menu
             </core-toolbar>
             <core-menu>
-                <core-item label="one"></core-item>
-                <core-item label="one"></core-item>
+                <paper-item>one</paper-item>
+                <paper-item>two</paper-item>
             </core-menu>
         </core-header-panel>
         <!-- drawer-content -->
@@ -66,21 +67,38 @@
 
             </core-toolbar>
             <!-- paper-content -->
-            <div>my content</div>
-            <div>main page content will go here</div>
-            <post-card src="images/avatar-01.svg"></post-card>
-            <post-card src="images/avatar-02.svg"></post-card>
-            <post-card src="images/avatar-03.svg"></post-card>
-            <post-card src="images/avatar-04.svg"></post-card>
+            <div class="content">
+                <div>my content</div>
+                <div>main page content will go here</div>
+                <post-card src="images/avatar-01.svg"></post-card>
+                <post-card src="images/avatar-02.svg"></post-card>
+                <post-card src="images/avatar-03.svg"></post-card>
+                <post-card src="images/avatar-04.svg"></post-card>
+            </div>
         </core-header-panel>
     </core-drawer-panel>
 
 
     <script>
     var tabs = document.querySelector('paper-tabs');
+    var divContent = document.querySelector('div.content');
 
     tabs.addEventListener('core-select', function() {
         console.log("Selected: " + tabs.selected);
+        switch (tabs.selected) {
+            case 'all':
+                divContent.innerHTML = '<post-card src="images/avatar-01.svg"></post-card>';
+                break;
+            case 'favorites':
+                divContent.innerHTML = 'favorites selected';
+                break;
+            case 'my':
+                divContent.innerHTML = 'my tab selected';
+                break;
+            case 'profile':
+                divContent.innerHTML = ' profile tab selected';
+                break;
+        }
     });
     </script>
     <script src="drawer.js"></script>

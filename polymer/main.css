@@ -30,3 +30,17 @@ core-drawer-panel:not([narrow]) #navicon{
 @media( min-width: 500px){
 
 }
+[drawer]{
+    background-color: white;
+    /*padding: 0;*/
+}
+paper-item{
+    padding: 5px;
+}
+core-menu{
+    margin: 0;
+    color: red;
+    /*background-color: orange;*/
+    font-size: 50xp;
+    text-align: center;
+}
