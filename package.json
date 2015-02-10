@@ -1,0 +1,36 @@
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "name": "linjonh.github.io",
+  "description": "the following command is to add grunt to your system path so that you can run grunt commod anywhere.\r \t(This will put the grunt command in your system path, allowing it to be run from anywhere.)\r - npm install -g grunt",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "grunt serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linjonh/linjonh.github.io"
+  },
+  "keywords": [
+    "MyApps",
+    "Download",
+    "Pages"
+  ],
+  "author": "jaysen.lin@foxmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linjonh/linjonh.github.io/issues"
+  },
+  "homepage": "https://github.com/linjonh/linjonh.github.io"
+}
