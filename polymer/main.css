@@ -11,8 +11,8 @@ core-header-panel {
     -webkit-overflow-scrolling: touch;
 }
 core-toolbar {
-    background: #03a9f4;
-    /*background: #9900cc;*/
+    /*background: #03a9f4;*/
+    background: #9900cc;
     color: white;
 }
 #tabs {
@@ -26,16 +26,6 @@ core-toolbar {
 }
 core-drawer-panel:not([narrow]) #navicon{
     display: none;
-}
-#drawerMenu{
-    background-color: white;
-}
-paper-item{
-    text-align: center;
-
-    font-size: 20px;
-    margin: 0,5px;
-    color:  #03a9f4;
 }
 @media( min-width: 500px){
 
