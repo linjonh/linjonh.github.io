@@ -81,7 +81,7 @@ module.exports = function(grunt) {
                     port: 8080,
                     hostname: "localhost",
                     livereload: 35729,
-                    base:'polymer',
+                    // base:'APP_BTSP',
                     open: true,
                 }
             }
