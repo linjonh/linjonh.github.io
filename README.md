@@ -57,3 +57,30 @@ In Gruntfile.js file, we regiter a task to run grunt serve:
 		'watch'
 	]);
 </pre>
+
+# Intall Jekyll
+	jekll depend on ruby gem, so first of all, you must ensure that your windows has been installed ruby gem.
+<pre>
+	~$: gem install jekyll
+</pre>
+	if you encounter a problem like this:
+<pre>
+ERROR:  Could not find a valid gem 'jekyll' (>= 0), here is why:
+          Unable to download data from https://rubygems.org/ - SSL_connect returned=1 errno=0 state=SSLv3 read 
+          server certificate B: certificate verify failed (https://api.rubygems.org/latest_specs.4.8.gz)
+</pre>
+you may should run the command:
+<pre> 
+~$: curl -o `ruby -ropenssl -e 'p OpenSSL::X509::DEFAULT_CERT_FILE' |tr -d \"` http://curl.haxx.se/ca/cacert.pem
+</pre>
+or
+<pre>
+	~$: curl http://curl.haxx.se/ca/cacert.pem -o cacert.pem
+</pre>
+if above commands dosen't work, you may change gem mirror like this: 
+<pre>
+	~$:sudo gem sources -r https://rubygems.org
+	~$:sudo gem sources -a http://rubygems.org  
+</pre>
+for more detail information about that, reference this site:
+<a href="http://stackoverflow.com/a/19179835/1227911">http://stackoverflow.com/a/19179835/1227911</a>
