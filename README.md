@@ -1,19 +1,19 @@
 # Install grunt.
-	the following command is to add grunt to your system path so that you can run grunt commod anywhere.
-	(This will put the grunt command in your system path, allowing it to be run from anywhere.)
+the following command is to add grunt to your system path so that you can run grunt commod anywhere.
+(This will put the grunt command in your system path, allowing it to be run from anywhere.)
 - npm install -g grunt 
 
 # Install grunt-init.
-	grunt-init could create some templated files such as Guntfile.js and package.json into your project root diretory.
+grunt-init could create some templated files such as Guntfile.js and package.json into your project root diretory.
 - npm install -g grunt-init
 
 # Use grunt-init to install init template file.
 
-	clone a exits templated file from github.
-	On windows:
+clone a exits templated file from github.
+On windows:
 - git clone https://github.com/gruntjs/grunt-init-gruntfile.git %USERPROFILE%.grunt-init/gruntfile
 	
-	On Linux:
+On Linux:
 - git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
 
 # run "grunt-init gruntfile" command to init project with Gruntfile.js and package.json.
@@ -45,7 +45,7 @@ In Gruntfile.js file, we regiter a task to run grunt serve:
 		watch:{
 			page_refresh:{
 				options:{
-					livereload:'<%= connect.options.livereload%>'
+					livereload:'&lt;%= connect.options.livereload%>'
 				}
 				files: ['**/*.js', '**/*.html','**/*.css'],
 			}
@@ -58,12 +58,12 @@ In Gruntfile.js file, we regiter a task to run grunt serve:
 	]);
 </pre>
 
-# Intall Jekyll
-	jekll depend on ruby gem, so first of all, you must ensure that your windows has been installed ruby gem.
+# Intall Jekyil
+jekyil depend on ruby gem, so first of all, you must ensure that your windows has been installed ruby gem.
 <pre>
 	~$: gem install jekyll
 </pre>
-	if you encounter a problem like this:
+if you encounter a problem like this:
 <pre>
 ERROR:  Could not find a valid gem 'jekyll' (>= 0), here is why:
           Unable to download data from https://rubygems.org/ - SSL_connect returned=1 errno=0 state=SSLv3 read 
