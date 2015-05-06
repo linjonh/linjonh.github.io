@@ -78,10 +78,10 @@
  }
  /*<===end*/
  
- #section1 h1, #section2 h1 {
+/* #section1 h1, #section2 h1 {
      font-weight: 200;
      font-size: 36px
- }
+ }*/
  #headline h1 {
      /*font-weight: 800;*/
      
@@ -132,7 +132,7 @@
  #download button:focus {
      border: none;
  }
- #app2 {
+ #app2,.dl_btn {
      margin-top: 20px;
  }
  br {
@@ -179,4 +179,10 @@
  }
  #section2 {
      padding-top: 1em;
+ }
+ .section_link{
+    color: white;     
+ }
+ .li_item{
+    margin-top: 10px;
  }
