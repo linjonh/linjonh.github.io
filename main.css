@@ -1,14 +1,16 @@
  html, body {
      margin: 0;
      padding: 0;
-     background-color: #EBEBEB;
+     /*background-color: #EBEBEB;*/
+     background-color: black;
      font-family: Roboto, helvetica, arial, sans-serif;
+     color: white;
  }
  #headline {
      padding: 0.8em;
      color: white;
      background-color: black;
-     background-image: url(headbg.jpg);
+     background-image: url(images/headlinebg.png);
      /*background-color: #1D49E8;*/
      
      background-size: cover;
@@ -140,7 +142,7 @@
  }
  .container {
      margin: auto;
-     max-width: 800px;
+     max-width: 900px;
      padding-right: 5%;
      padding-left: 5%;
      padding-top: 0;
@@ -148,11 +150,13 @@
  }
  footer {
      text-align: center;
-     background-color: #1D49E8;
+     /*background-color: #030B1E;*/
+     /*background-color: #090300;*/
+     background-color: #004646;
      color: white;
      padding: 0.5em;
      font-size: 100;
-     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+     font-family: Roboto,"Helvetica Neue", Helvetica, Arial, sans-serif;
  }
  footer a {
      color: white;
@@ -165,18 +169,27 @@
      margin-bottom: 1em;
  }
  /* background */
- 
+  #s3bg{
+    padding-top: 50px;
+ }
  #s1bg {
-     background-color: #FFF8E1;
+     /*background-color: #FFF8E1;*/
      margin: 0;
      padding-top: 0.8em;
      padding-bottom: 3em;
+     
  }
  #s2bg {
-     background-color: #BBDEFB;
+     /*background-color: #BBDEFB;*/
+     
      padding-bottom: 3em;
      padding-top: 0.8em;
  }
+.content{
+    background-image: url(images/bg1.jpg);
+     background-size: cover;
+     color: white;
+}
  #section2 {
      padding-top: 1em;
  }
@@ -186,3 +199,8 @@
  .li_item{
     margin-top: 10px;
  }
+img{
+    max-width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
