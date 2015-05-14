@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      /*background-color: #EBEBEB;*/
+     
      background-color: black;
      font-family: Roboto, helvetica, arial, sans-serif;
      color: white;
@@ -29,19 +30,23 @@
      #title {
          font-size: 48px;
      }
-     #googleAds{
-        display: none;
+     #googleAds {
+         display: none;
+     }
+     img{
+        max-width: inherit;
      }
  }
  @media screen and (min-width: 600px) {
      /*===>start*/
-      #googleAds{
-        display: block;
-        /*background-color: red;*/
+     
+     #googleAds {
+         display: block;
+         /*background-color: red;*/
      }
-     #baiduAds{
-        width: 100%;
-        height:90px;
+     #baiduAds {
+         width: 100%;
+         height: 90px;
      }
      #blur {
          float: left;
@@ -77,13 +82,18 @@
          
          box-sizing: border-box;
      }
+     img {
+         max-width: 400px;
+         /*margin-left: 10px;*/
+         margin-top: 50px;
+     }
  }
  /*<===end*/
- 
-/* #section1 h1, #section2 h1 {
+ /* #section1 h1, #section2 h1 {
      font-weight: 200;
      font-size: 36px
  }*/
+ 
  #headline h1 {
      /*font-weight: 800;*/
      
@@ -134,7 +144,7 @@
  #download button:focus {
      border: none;
  }
- #app2,.dl_btn {
+ #app2, .dl_btn {
      margin-top: 20px;
  }
  br {
@@ -152,11 +162,12 @@
      text-align: center;
      /*background-color: #030B1E;*/
      /*background-color: #090300;*/
+     
      background-color: #004646;
      color: white;
      padding: 0.5em;
      font-size: 100;
-     font-family: Roboto,"Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
  footer a {
      color: white;
@@ -169,15 +180,16 @@
      margin-bottom: 1em;
  }
  /* background */
-  #s3bg{
-    padding-top: 50px;
+ 
+ #s3bg {
+     padding-top: 50px;
  }
  #s1bg {
      /*background-color: #FFF8E1;*/
+     
      margin: 0;
      padding-top: 0.8em;
      padding-bottom: 3em;
-     
  }
  #s2bg {
      /*background-color: #BBDEFB;*/
@@ -185,22 +197,17 @@
      padding-bottom: 3em;
      padding-top: 0.8em;
  }
-.content{
-    background-image: url(images/bg1.jpg);
+ .content {
+     background-image: url(images/bg1.jpg);
      background-size: cover;
      color: white;
-}
+ }
  #section2 {
      padding-top: 1em;
  }
- .section_link{
-    color: white;     
+ .section_link {
+     color: white;
  }
- .li_item{
-    margin-top: 10px;
+ .li_item {
+     margin-top: 10px;
  }
-img{
-    max-width: 300px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
