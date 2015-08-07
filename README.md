@@ -3,7 +3,7 @@ Using Grunt 0.3? Please see Grunt 0.3 Notes
 
 In order to get started, you'll want to install Grunt's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
 
--npm install -g grunt-cli
+- npm install -g grunt-cli
 This will put the grunt command in your system path, allowing it to be run from any directory.
 
 Note that installing grunt-cli does not install the Grunt task runner! The job of the Grunt CLI is simple: run the version of Grunt which has been installed next to a Gruntfile. This allows multiple versions of Grunt to be installed on the same machine simultaneously.
@@ -16,9 +16,9 @@ the following command is to add grunt to your system path so that you can run gr
 #Working with an existing Grunt project
 Assuming that the Grunt CLI has been installed and that the project has already been configured with a <pre>package.json</pre> and a <pre>Gruntfile</pre>, it's very easy to start working with Grunt:
 
--Change to the project's root directory.
--Install project dependencies with <pre>npm install</pre>.
--Run Grunt with <pre>grunt</pre>.
+- Change to the project's root directory.
+- Install project dependencies with <pre>npm install</pre>.
+- Run Grunt with <pre>grunt</pre>.
 
 That's really all there is to it. Installed Grunt tasks can be listed by running grunt --help but it's usually a good idea to start with the project's documentation.
 
