@@ -1,24 +1,28 @@
- html, body {
+ html,
+ body {
      margin: 0;
      padding: 0;
      /*background-color: #EBEBEB;*/
-     
-     background-color: black;
+     /*background-color: black;*/
      font-family: Roboto, helvetica, arial, sans-serif;
      color: white;
  }
+ 
  #headline {
      padding: 0.8em;
      color: white;
-     background-color: black;
-     background-image: url(images/headlinebg.png);
+     /* background-color: black; */
+     /*background-image: url(images/headlinebg.png);*/
      /*background-color: #1D49E8;*/
-     
+     margin-top: 200px;
+     margin-bottom: 100px;
      background-size: cover;
  }
+ 
  #title {
      font-weight: 100;
  }
+ 
  #download {
      background-color: rgba(57, 177, 164, 0.7);
      border-radius: 10px;
@@ -26,6 +30,7 @@
      padding: 20px;
      margin-top: 50px;
  }
+ 
  @media screen and (max-width: 600px) {
      #title {
          font-size: 48px;
@@ -33,13 +38,13 @@
      #googleAds {
          display: none;
      }
-     img{
-        max-width: inherit;
+     img {
+         max-width: inherit;
      }
  }
+ 
  @media screen and (min-width: 600px) {
      /*===>start*/
-     
      #googleAds {
          display: block;
          /*background-color: red;*/
@@ -66,7 +71,6 @@
      /*  #headline br {
            clear: both;
        } */
-     
      .section-left {
          float: left;
          width: 80%;
@@ -79,7 +83,6 @@
          margin-top: 50px;
          /*padding-left: 100px;*/
          /*margin-left: 50px*/
-         
          box-sizing: border-box;
      }
      img {
@@ -96,15 +99,16 @@
  
  #headline h1 {
      /*font-weight: 800;*/
-     
      line-height: 1em;
      margin-top: 10px;
  }
+ 
  #download h1 {
      text-align: center;
      padding: 0;
      margin-top: 0;
  }
+ 
  #download button {
      width: 100%;
      padding: 0.5em;
@@ -113,43 +117,43 @@
      border-radius: 20px 20px;
      box-shadow: 3px 3px 5px black;
      /*background-color: rgba(105, 170, 70,1);*/
-     
      background-color: hsl(0, 100%, 40%);
-     /*border-color: rgba(150, 150, 200);*/
-     
+     /*border-color: rgba(0,150, 150, 200);*/
      border: none;
      /*outline is used to delete focus state rectangle*/
-     
      outline: none;
      /*color is for text color*/
-     
      color: white;
  }
+ 
  #download button:hover {
      background-color: #dcdcdc;
      /*border-color: rgba(150, 150, 250, 0.8);*/
-     
      color: black;
      border: none;
  }
+ 
  #download button:active {
      /*background-color: #629A43;*/
-     
      background-color: hsl(0, 100%, 40%);
      /*border-color: rgba(150, 150, 250, 0.8);*/
-     
      color: white;
      border: none;
  }
+ 
  #download button:focus {
      border: none;
  }
- #app2, .dl_btn {
+ 
+ #app2,
+ .dl_btn {
      margin-top: 20px;
  }
+ 
  br {
      clear: both;
  }
+ 
  .container {
      margin: auto;
      max-width: 900px;
@@ -158,20 +162,22 @@
      padding-top: 0;
      padding-bottom: 0;
  }
+ 
  footer {
      text-align: center;
      /*background-color: #030B1E;*/
      /*background-color: #090300;*/
-     
      background-color: #004646;
      color: white;
      padding: 0.5em;
      font-size: 100;
      font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
+ 
  footer a {
      color: white;
  }
+ 
  .section-left img {
      width: 50%;
      float: left;
@@ -184,30 +190,54 @@
  #s3bg {
      padding-top: 50px;
  }
+ 
  #s1bg {
      /*background-color: #FFF8E1;*/
-     
      margin: 0;
      padding-top: 0.8em;
      padding-bottom: 3em;
  }
+ 
  #s2bg {
      /*background-color: #BBDEFB;*/
-     
      padding-bottom: 3em;
      padding-top: 0.8em;
  }
+ 
  .content {
      background-image: url(images/bg1.jpg);
      background-size: cover;
      color: white;
  }
+ 
  #section2 {
      padding-top: 1em;
  }
+ 
  .section_link {
      color: white;
  }
+ 
  .li_item {
      margin-top: 10px;
+ }
+ 
+ div#header {
+     text-align: center;
+     top: 0;
+     padding: 0;
+     position: absolute;
+     background-color: #004646;
+ }
+ 
+ #header_bg {
+     visibility: visible;
+     margin: 0;
+     position: absolute;
+     z-index: -1;
+     top: 40%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     width: auto;
+     height: 1900px;
  }
