@@ -1,5 +1,7 @@
 body {
     background-color: #2CCB4C;
+    color: white;
+    padding-top: 80px;
 }
 
 div#header {
@@ -12,6 +14,7 @@ div#header {
     background-color: #14A12B;
     z-index: 15;
     color: white;
+    position: fixed;
 }
 
 
@@ -20,41 +23,107 @@ div#header {
 }*/
 
 #my_qrcode {
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     right: 20px;
-    top: 100px;
+    bottom: 10px;
     z-index: 100;
     text-align: center;
     background-color: #554477;
     font-size: 20px;
     width: 35%;
+    color: white;
+}
+
+#my_qrcode img {
+    width: 100%;
 }
 
 #image_div {
     /*width: 20%;*/
     /*position: absolute;*/
-    /*float: left;*/
-    margin-left: 0px;
-    padding-top: 0px;
-    background-color: red;
+    float: left;
+    /* margin-left: 0px;
+    padding-top: 0px;*/
 }
 
 #vedio_show {
-    /*width: 40%;*/
-    width: 720px;
-    margin-top: 85px;
+    width: 100%;
+    /*width: 350px;*/
+    /*margin-top: 5px;*/
     float: left;
-    background-color: red;
 }
 
-ul {
+#image_div ul {
     list-style: none;
-    float: left;
-    margin-top: 85px;
-    padding-left: 0px;
+    /*float: left;*/
+    /*margin-top: 85px;*/
+    padding: 1px;
 }
 
-li{
+#image_div li {
     position: absolute;
     overflow: hidden;
+    padding-right: 10px;
+}
+#disc {
+    font-size: 20px;
+    /*font: 200;*/
+}
+@media screen and (max-width: 760px) {
+    #image_div li img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #vedio_show {
+        width: 50%;
+    }
+    #image_div li {
+        width: 40%;
+    }
+    #image_div ul {
+        padding-left: 10px;
+    }
+    #image_div li {
+        /*margin-top: 70px;*/
+        padding-top: 0px;
+    }
+    #image_div li img {
+        width: 100%;
+    }
+    #my_qrcode {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #vedio_show {
+        width: 40%;
+    }
+    #image_div li {
+        /*margin-top: 70px;*/
+        padding-top: 0px;
+    }
+    #image_div li img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #vedio_show {
+        width: 30%;
+    }
+    #image_div {
+        width: 40%;
+    }
+    #image_div li {
+        /*margin-top: 70px;*/
+        padding-top: 0px;
+    }
+    #image_div li img {
+        width: 80%;
+        height: 950px;
+    }
 }
