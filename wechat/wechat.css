@@ -66,15 +66,26 @@ div#header {
     overflow: hidden;
     padding-right: 10px;
 }
-#disc {
+.txt {
     font-size: 20px;
     /*font: 200;*/
+}
+.txt li{
+    margin-top:10px; 
+}
+.sub_title{
+    width: 100%;
+    background-color: red;
+}
+.sub_title h3{
+    padding: 10px;
 }
 @media screen and (max-width: 760px) {
     #image_div li img {
         width: 100%;
     }
-}
+
+   }
 
 @media screen and (min-width: 768px) {
     #vedio_show {
