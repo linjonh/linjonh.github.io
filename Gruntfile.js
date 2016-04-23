@@ -81,8 +81,8 @@ module.exports = function(grunt) {
                     port: 8081,
                     hostname: "localhost",
                     livereload: 35729,
-                    // base:'fruits',
-                    base:'wechat',
+                    base:'fruits',
+                    // base:'wechat',
                     open: true,
                 }
             }
