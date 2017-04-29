@@ -78,10 +78,10 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8081,
+                    port: 9999,
                     hostname: "localhost",
                     livereload: 35729,
-                    base:'fruits',
+                    base:'/',
                     // base:'wechat',
                     open: true,
                 }
