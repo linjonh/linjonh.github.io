@@ -4,13 +4,15 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.2",
+    "browser-sync": "^2.18.8",
     "grunt": "~1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-qunit": "^2.0.0",
     "grunt-contrib-uglify": "^2.3.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1"
   },
   "name": "linjonh.github.io",
   "description": "the following command is to add grunt to your system path so that you can run grunt commod anywhere.\r \t(This will put the grunt command in your system path, allowing it to be run from anywhere.)\r - npm install -g grunt",
