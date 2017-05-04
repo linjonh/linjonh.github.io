@@ -2,24 +2,14 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "devDependencies": {
-    "bootstrap": "^3.3.2",
-    "browser-sync": "^2.18.8",
-    "grunt": "~1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-qunit": "^2.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "gulp": "^3.9.1"
-  },
   "name": "linjonh.github.io",
   "description": "the following command is to add grunt to your system path so that you can run grunt commod anywhere.\r \t(This will put the grunt command in your system path, allowing it to be run from anywhere.)\r - npm install -g grunt",
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "test": "grunt serve"
+    "test": "grunt serve",
+    "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
+    "start": "tsc && gulp serve"
   },
   "repository": {
     "type": "git",
@@ -35,5 +25,34 @@
   "bugs": {
     "url": "https://github.com/linjonh/linjonh.github.io/issues"
   },
-  "homepage": "https://github.com/linjonh/linjonh.github.io"
+  "homepage": "https://github.com/linjonh/linjonh.github.io",
+  "devDependencies": {
+    "bootstrap": "^3.3.2",
+    "browser-sync": "^2.18.8",
+    "grunt": "~1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.1.0",
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/compiler-cli": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/platform-server": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "rxjs": "^5.0.1",
+    "systemjs": "^0.20.12",
+    "zone.js": "^0.8.4"
+  }
 }
