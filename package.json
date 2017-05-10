@@ -8,7 +8,7 @@
   "main": "index.html",
   "scripts": {
     "test": "grunt serve",
-    "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
+    "build-aot": "\"node_modules/.bin/ngc\" -p tsconfig-aot.json && \"node_modules/.bin/rollup\"  -c rollup-config.js",
     "start": "tsc && gulp serve"
   },
   "repository": {
@@ -37,6 +37,10 @@
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "gulp": "^3.9.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.2",
     "typescript": "^2.3.2"
   },
   "dependencies": {

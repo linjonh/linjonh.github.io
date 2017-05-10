@@ -3,8 +3,8 @@
  */
 import {Component} from "@angular/core";
 @Component({
-    id: module.id,
+    selector: 'my-app',
     templateUrl: 'app.component.html'
 })
-export class AppComponet {
+export class AppComponent {
 }

@@ -9,14 +9,15 @@ gulp.task('browserSync', function () {
     browserSync.init({
         // proxy:'localhost',
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            index:"./index-jit.html"
         },
         port: 9007,
         open: 'local',
         // https:true
     });
 
-    gulp.watch(['./**'], browserSync.reload)
+    gulp.watch(['./**'], browserSync.reload("index-jit.html"))
 });
 
 gulp.task("serve",["browserSync"]);
