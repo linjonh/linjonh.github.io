@@ -1,0 +1,101 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     padding-top: 50px;
+     /*background-color: #5588EB;*/
+     background-color: #002222;
+     /* background-image: url(../images/bg.jpg);
+     background-size: cover;
+     background-repeat: round;*/
+     font-family: Roboto, helvetica, arial, sans-serif;
+     color: white;
+ }
+ 
+ div#header {
+     text-align: center;
+     top: 0;
+     padding: 0;
+     position: fixed;
+     background-color: #004646;
+     z-index: 15;
+ }
+ 
+ div#section_one {
+     margin-top: 80px;
+     /* position: relative;*/
+     width: 100%;
+     background-color: #0099cc;
+     z-index: 10;
+ }
+ 
+ div#product_show {
+     overflow: hidden;
+ }
+ 
+ div#my_qrcode {
+     position: fixed;
+     right: 5px;
+     bottom: 5px;
+     z-index: 100;
+     text-align: center;
+     background-color: #554477;
+     font-size: 20px;
+     width: 25%;
+ }
+ 
+ div#my_qrcode img {
+     width: 100%;
+     /*margin: auto;*/
+ }
+ 
+ div#main_banner ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     padding-left: 30px;
+ }
+ 
+ div#main_banner li p {
+     width: 50%;
+     /*margin: 0;*/
+     /*float: left;*/
+     /* position: absolute; */
+ }
+ 
+ div#main_banner {
+     /*width: 100%;*/
+     height: 200px;
+     /*margin: auto;*/
+     /*margin-top: 100px;*/
+     /*overflow: hidden;*/
+ }
+ 
+ div#main_banner img {
+     width: 50%;
+     height: 50%;
+     margin: auto;
+ }
+ 
+ div#discription {
+     margin-left: 30px;
+     width: 50%;
+ }
+ 
+ @media screen and (max-width: 500px) {
+     div#my_qrcode {
+         width: 35%;
+         font-size: 18px;
+     }
+ }
+ 
+ @media screen and (min-width: 768px) {
+     .content {
+         margin-left: 5%;
+     }
+     div#main_banner img,
+     div#main_banner li p,
+     div#discription {
+         width: 70%;
+     }
+ }
