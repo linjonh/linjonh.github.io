@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "src",
     "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -14,9 +15,9 @@
     "suppressImplicitAnyIndexErrors": true
   },
   "files": [
-    "angular/app/app.module.ts",
-    "angular/app/app.component.ts",
-    "angular/main.ts"
+    "src/app/app.module.ts",
+    "src/app/app.component.ts",
+    "src/main.ts"
   ],
   "angularCompilerOptions": {
     "genDir": "aot",

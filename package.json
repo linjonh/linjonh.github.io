@@ -26,23 +26,6 @@
     "url": "https://github.com/linjonh/linjonh.github.io/issues"
   },
   "homepage": "https://github.com/linjonh/linjonh.github.io",
-  "devDependencies": {
-    "bootstrap": "^3.3.2",
-    "browser-sync": "^2.18.8",
-    "grunt": "~1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-qunit": "^2.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "gulp": "^3.9.1",
-    "rollup": "^0.41.6",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-uglify": "^1.0.2",
-    "typescript": "^2.3.2"
-  },
   "dependencies": {
     "@angular/animations": "^4.1.0",
     "@angular/common": "^4.1.0",
@@ -58,5 +41,24 @@
     "rxjs": "^5.0.1",
     "systemjs": "^0.20.12",
     "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.0.3",
+    "@angular/compiler-cli": "^4.1.0",
+    "bootstrap": "^3.3.2",
+    "browser-sync": "^2.18.8",
+    "grunt": "~1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.2",
+    "typescript": "^2.3.2"
   }
 }

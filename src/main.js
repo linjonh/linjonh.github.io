@@ -1,15 +1,12 @@
-"use strict";
-// import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
-// import {AppModule} from "./app/app.module";
-//
-// /**
-//  * Created by jaysen.lin@foxmail.com on 2017/5/4.
-//  */
-// platformBrowserDynamic().bootstrapModule(AppModule);
-Object.defineProperty(exports, "__esModule", { value: true });
-// aot修改为以下的方式引导
-var app_module_ngfactory_1 = require("./../aot/angular/app/app.module.ngfactory.ts");
-var platform_browser_1 = require("@angular/platform-browser");
-console.log('Running AOT compiled');
-platform_browser_1.platformBrowser().bootstrapModuleFactory(app_module_ngfactory_1.AppModuleNgFactory);
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { AppModule } from "./app/app.module";
+/**
+ * Created by jaysen.lin@foxmail.com on 2017/5/4.
+ */
+platformBrowserDynamic().bootstrapModule(AppModule);
+// // aot修改为以下的方式引导
+// import { AppModuleNgFactory } from '../aot/angular/app/app.module.ngfactory';
+// import { platformBrowser }    from '@angular/platform-browser';
+// console.log('Running AOT compiled');
+// platformBrowser().bootstrapModuleFactory(AppModuleNgFactory); 
 //# sourceMappingURL=main.js.map
