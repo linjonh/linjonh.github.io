@@ -8,8 +8,9 @@
   "main": "index.html",
   "scripts": {
     "test": "grunt serve",
-    "build-aot": "\"node_modules/.bin/ngc\" -p tsconfig-aot.json && \"node_modules/.bin/rollup\"  -c rollup-config.js",
-    "start": "tsc && gulp serve"
+    "build-aot-origin": "\"node_modules/.bin/ngc\" -p src/tsconfig-aot.json && \"node_modules/.bin/rollup\"  -c src/rollup-config.js",
+    "build:aot:simple": "ngc -p src/tsconfig-aot.json && rollup -c rollup-config.js",
+    "start": "tsc -p src && gulp serve"
   },
   "repository": {
     "type": "git",

@@ -9,8 +9,8 @@ gulp.task('browserSync', function () {
     browserSync.init({
         // proxy:'localhost',
         server: {
-            baseDir: "./",
-            index:"./index-jit.html"
+            baseDir: "src",
+            index:"index-jit.html"
         },
         port: 9007,
         open: 'local',

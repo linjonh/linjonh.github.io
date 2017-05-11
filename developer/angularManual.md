@@ -219,7 +219,24 @@ tag:
 ```html
    <script src="build.js"></script>
 ```
+## 工作流与便利脚本
+   
+   每当修改时，我们都将重新构建应用的AOT版本。 那些npm命令太长，很难记。
+   
+   把下列npm便利脚本添加到package.json中，以便用一条命令就可以完成编译和Rollup打包工作。
+```json
+{
+ "scripts": {
+   "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js"
+ }
+}
 
+```
+   打开终端窗口，并试一下。
+```cmd
+npm run build:aot
+```
+   
 ## 检查打包后的js合法性（ Inspect the Bundle）
 It's fascinating to see what the generated JavaScript bundle looks like after Rollup.
 The code is minified, so you won't learn much from inspecting the bundle directly.
