@@ -7,6 +7,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {ContentComponent} from './content/content.component';
+import {ContentService} from "./content.service";
 @NgModule({
     id: module.id,
     declarations: [
@@ -16,7 +17,7 @@ import {ContentComponent} from './content/content.component';
         , ContentComponent
     ],
     imports: [BrowserModule,],
-    providers: [],
+    providers: [ContentService],
 
     bootstrap: [AppComponent],
 })
