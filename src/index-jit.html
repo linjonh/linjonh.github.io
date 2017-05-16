@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=false">
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
     <meta name="description"
           content="This page is Android APPs station for all users those who are interested in play APPs  to download.">
     <meta name="keywords"
@@ -42,12 +42,15 @@
     <meta name="baidu-site-verification" content="LVGuWnlLCo"/>
 
 
-
-    <script src="../node_modules/systemjs/dist/system.src.js"></script>
-    <script src="./systemjs.config.js"></script>
+    <!--no need again, use ng serve command {-->
+<!--    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/src/systemjs.config.js"></script>
     <script>
-        System.import('main-jit.js').catch(function(err){ console.error(err); });
-    </script>
+        System.import('/src/main-jit.js').catch(function (err) {
+            console.error(err);
+        });
+    </script>-->
+    <!--}no need again, use ng serve command-->
 
 </head>
 

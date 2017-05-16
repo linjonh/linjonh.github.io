@@ -15,12 +15,12 @@
     "suppressImplicitAnyIndexErrors": true
   },
   "files": [
-    "src/app/app.module.ts",
-    "src/app/app.component.ts",
-    "src/main.ts"
+    "app/app.module.ts",
+    "app/app.component.ts",
+    "main.ts"
   ],
   "angularCompilerOptions": {
-    "genDir": "aot",
+    "genDir": "../aot",
     "skipMetadataEmit": true
   }
 }

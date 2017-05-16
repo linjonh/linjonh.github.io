@@ -9,7 +9,7 @@
   "scripts": {
     "test": "grunt serve",
     "build-aot-origin": "\"node_modules/.bin/ngc\" -p src/tsconfig-aot.json && \"node_modules/.bin/rollup\"  -c src/rollup-config.js",
-    "build:aot:simple": "ngc -p src/tsconfig-aot.json && rollup -c rollup-config.js",
+    "build:aot:simple": "ngc -p src/tsconfig-aot.json && rollup -c src/rollup-config.js && gulp serve:aot",
     "start": "tsc -p src && gulp serve"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "@angular/core": "^4.1.0",
     "@angular/forms": "^4.1.0",
     "@angular/http": "^4.1.0",
+    "@angular/material": "^2.0.0-beta.3",
     "@angular/platform-browser": "^4.1.0",
     "@angular/platform-browser-dynamic": "^4.1.0",
     "@angular/platform-server": "^4.1.0",
@@ -60,6 +61,8 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^1.0.2",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60"
   }
 }

@@ -1,5 +1,5 @@
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
-import {AppModule} from "./app/app.module";
+import {AppModule} from './app/app.module';
 /**
  * Created by jaysen.lin@foxmail.com on 2017/5/4.
  */
