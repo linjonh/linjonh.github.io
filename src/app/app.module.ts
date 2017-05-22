@@ -8,6 +8,8 @@ import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {ContentComponent} from './content/content.component';
 import {ContentService} from "./content.service";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MdTabsModule} from "@angular/material";
 @NgModule({
     id: module.id,
     declarations: [
@@ -16,7 +18,7 @@ import {ContentService} from "./content.service";
         , HeaderComponent
         , ContentComponent
     ],
-    imports: [BrowserModule,],
+    imports: [BrowserModule,BrowserAnimationsModule,MdTabsModule],
     providers: [ContentService],
 
     bootstrap: [AppComponent],
