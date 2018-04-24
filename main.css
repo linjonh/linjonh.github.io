@@ -13,9 +13,8 @@
      color: white;
      /* background-color: black; */
      /*background-image: url(images/headlinebg.png);*/
-     /*background-color: #1D49E8;*/
-     margin-top: 200px;
-     margin-bottom: 100px;
+     background-color: #ff9800;
+     
      background-size: cover;
  }
  
@@ -34,7 +33,7 @@
  @media screen and (max-width: 600px) {
      /*<= 600px */
      #title {
-         font-size: 48px;
+         font-size: 30px;
      }
      #googleAds {
          display: none;
@@ -157,7 +156,7 @@
  }
  
  .container {
-     margin: auto;
+     margin-top: 100px;
      max-width: 900px;
      padding-right: 5%;
      padding-left: 5%;
@@ -207,9 +206,10 @@
  }
  
  .content {
-     background-image: url(images/bg1.jpg);
-     background-size: cover;
+     /*background-image: url(images/bg1.jpg);*/
+     /*background-size: cover;*/
      color: white;
+     background-color: #000000
  }
  
  #section2 {
@@ -242,6 +242,7 @@
      transform: translate(-50%, -50%);
      width: auto;
      height: 1900px;
+     background-color: #dcdcdc;
  }
  
  video {
