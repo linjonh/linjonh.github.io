@@ -1,22 +1,19 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
-gulp.task('default', function () {
-    // 将你的默认的任务代码放在这
-});
-
-gulp.task('browserSync', function () {
+// 定义 browserSync 任务
+function browserSyncTask(done) {
     browserSync.init({
-        // proxy:'localhost',
         server: {
             baseDir: "./"
         },
-        port: 9007,
-        open: 'local',
-        // https:true
+        port: 9006,
+        open: 'local'
     });
 
-    gulp.watch(['./**'], browserSync.reload)
-});
+    gulp.watch(['./**']).on('change', browserSync.reload);
+    done();
+}
 
-gulp.task("serve",["browserSync"]);
+// 默认任务
+gulp.task('default', gulp.series(browserSyncTask));
