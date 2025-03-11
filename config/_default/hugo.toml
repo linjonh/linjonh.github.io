@@ -1,0 +1,104 @@
+
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+#pygmentsUseClasses = true
+#pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength  = 30
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[pagination]
+pagerSize = 6
+
+[Params]
+selfHosted = true
+mainSections = ["post","posts"]
+dateFormat = "2006-12-01"
+comments = false
+readingTime = false
+wordCount = false
+useHLJS = true
+socialShare = true
+delayDisqus = true
+showRelatedPosts = true
+summaryLength  = "9"
+lunrSearch = true
+gcse = false
+lastmod = false
+rss = true
+pagination = "10"
+hideAuthor = false
+description="Your can add your website description here."
+previewCardImagePlacement = "top"
+showPostImage = true
+
+[Params.Author]
+  name = "linjonh"
+  website = "https://linjonh.github.io/"
+  authorInfo = ""
+  authorPostImage = "/img/author-post-img.jpg"
+  email = "jaysen.lin@foxmail.com"
+  facebook = "username"
+  instagram = "username"
+  youtube = "user/username" # or channel/channelname
+  twitter = "username"
+  linkedin = "username"
+  github = "username"
+  threads = "username"
+  gitlab = "username"
+  reddit = "username"
+  stackoverflow = "users/XXXXXXX/username"
+  snapchat = "username"
+  spotify = "username"
+  paypal = "username"
+  telegram = "username"
+  mastodon = "url"
+  slack = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #500px = "username"
+  #kaggle = "username"
+  #weibo = "username"
+  #xing = "username"
+  #bitbucket = "username"
+  #soundcloud = "username"
+  # codepen = "username"
+
+[[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "笔记"
+    url = "/notes/"
+    weight = 2
+
+[[menu.main]]
+    name = "标签"
+    url = "/tags/blog/"
+    weight = 3
+
+[[menu.main]]
+    name = "编册"
+    url = "/collections/"
+    weight = 4
+
+[[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 5
+
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
