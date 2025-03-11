@@ -20,7 +20,7 @@ pagerSize = 6
 selfHosted = true
 mainSections = ["post","posts"]
 dateFormat = "2006-12-01"
-comments = true
+comments = false
 readingTime = true
 wordCount = true
 useHLJS = true
@@ -83,7 +83,7 @@ showPostImage = true
 
 [[menu.main]]
     name = "标签"
-    url = "/tags/blog/"
+    url = "/tags/"
     weight = 3
 
 [[menu.main]]
