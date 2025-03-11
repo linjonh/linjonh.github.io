@@ -1,5 +1,5 @@
 baseURL = 'https://linjonh.github.io/'
-languageCode = 'zh-cn'
+languageCode = 'zh-CN'
 title = '掘金小册'
 theme = "ligthbi"
 

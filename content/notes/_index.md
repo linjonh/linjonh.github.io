@@ -1,6 +1,6 @@
 ---
 type : "tags"
 layout : "notes"
-title: "Notes"
-subtitle : "Your musings or reading notes"
+title: "笔记"
+subtitle : "分享有用有意思的笔记"
 ---
