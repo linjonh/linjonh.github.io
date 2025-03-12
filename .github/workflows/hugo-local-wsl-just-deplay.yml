@@ -1,4 +1,4 @@
-name: "jekyll-local-win-just-deplay"
+name: "hugo-local-wsl-just-deplay"
 on:
   # push:
   #   branches:
