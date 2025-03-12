@@ -1,0 +1,24 @@
+{
+  "name": "linjonh.github.io",
+  "version": "1.0.0",
+  "description": "github 主站点",
+  "main": "index.html",
+  "scripts": {
+    "test": "hugo serve --gc --minify",
+    "pro": "HUGO_ENVIRONMENT=production hugo server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linjonh/linjonh.github.io.git"
+  },
+  "keywords": [
+    "hugo",
+    "blog"
+  ],
+  "author": "linjonh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linjonh/linjonh.github.io/issues"
+  },
+  "homepage": "https://github.com/linjonh/linjonh.github.io#readme"
+}
