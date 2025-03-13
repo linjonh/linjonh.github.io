@@ -4,7 +4,7 @@
   "description": "github 主站点",
   "main": "index.html",
   "scripts": {
-    "test": "rm -rf public && hugo serve --gc --minify",
+    "test": "rm -rf public && hugo serve #--gc --minify",
     "pro": "HUGO_ENVIRONMENT=production hugo server --gc --minify"
   },
   "repository": {

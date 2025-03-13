@@ -1,0 +1,50 @@
+<!--
+If you want to include any custom html just before </head>, put it in this file.
+Or you can delete these file if you don't need it.
+-->
+<!-- for example, you could insert this custom css, which makes the bigimg not stretch:
+<style>
+.intro-header.big-img, .intro-header.big-img  .big-img-transition {
+  -webkit-background-size: contain !important;
+  -moz-background-size: contain !important;
+  background-size: contain !important;
+  -o-background-size: contain !important;
+  background-color: lightgrey;
+}
+</style>
+-->
+<!-- or you could include some additional css libraries:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.css" integrity="sha256-I1UoFd33KHIydu88R9owFaQWzwkiZV4hXXug5aYaM28=" crossorigin="anonymous" />
+-->
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?ac918c8b5f9b985db0771865dedc902e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<meta name="baidu-site-verification" content="LVGuWnlLCo"/>
+<meta name="google-adsense-account" content="ca-pub-5363852791482518">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5363852791482518" crossorigin="anonymous"></script>
+{{/*  把谷歌的分析代码放在head头部  */}}
+{{- $analytics := .Site.Params.analytics -}}
+{{- $enable := .Site.Params.analytics.enable -}}
+{{- $id := .Site.Params.analytics.google.id -}}
+{{warnf "analytics.enable %s" $id}}
+{{- if $enable -}}
+    {{- /* Google Analytics */ -}}
+    {{- with $id -}}
+        <script>
+            window.dataLayer=window.dataLayer||[];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', '{{ . }}'{{ if $analytics.google.anonymizeIP }}, { 'anonymize_ip': true }{{ end }});
+        </script>
+        {{ printf "https://www.googletagmanager.com/gtag/js?id=%v" . | dict "Async" true "Source" | partial "plugin/script.html" }}
+    {{- end -}}
+{{- end -}}
