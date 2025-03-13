@@ -107,20 +107,20 @@ fingerprint = ""
 dateFormat = "2006-01-02"
 # website title for Open Graph and Twitter Cards
 # 网站标题, 用于 Open Graph 和 Twitter Cards
-title = "技术博客"
+title = "掘金小册"
 # website description for RSS, SEO, Open Graph and Twitter Cards
 # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-description = "技术博客"
+description = "掘金小册，技术博客，收录各大讲师实用课程。"
 # website images for Open Graph and Twitter Cards
 # 网站图片, 用于 Open Graph 和 Twitter Cards
-images = ["/logo.png"]
+images = ["/Apple-Devices-Preview.png"]
 
 # Author config
 # 作者配置
 [params.author]
 name = "JAY.LIN"
-email = ""
-link = ""
+email = "jaysen.lin@foxmal.com"
+link = "https://linjonh.github.io"
 
 [params.pwa]
 enabled = true
@@ -150,7 +150,7 @@ mobileMode = "auto"
 logo = ""
 # title name
 # 标题名称
-name = "技术博客"
+name = "掘金小册"
 # you can add extra information before the name (HTML format is supported), such as icons
 # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
 pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
@@ -218,7 +218,7 @@ rss = 10
 [params.app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
 # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-title = "技术博客"
+title = "掘金小册"
 # whether to omit favicon resource links
 # 是否隐藏网站图标资源链接
 noFavicon = false
@@ -958,7 +958,7 @@ rss = 10
 enable = true
 gravatarEmail = ""
 avatarURL = "https://api.vvhan.com/api/avatar/boy"
-title = "技术博客分享"
+title = "技术交流分享"
 subtitle = "闻道有先后-术业有专攻"
 typeit = true
 social = true
