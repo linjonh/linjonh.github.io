@@ -29,3 +29,22 @@ Or you can delete these file if you don't need it.
 <meta name="baidu-site-verification" content="LVGuWnlLCo"/>
 <meta name="google-adsense-account" content="ca-pub-5363852791482518">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5363852791482518" crossorigin="anonymous"></script>
+{{/*  把谷歌的分析代码放在head头部  */}}
+{{- $analytics := .Site.Params.analytics -}}
+{{- $enable := .Site.Params.analytics.enable -}}
+{{- $id := .Site.Params.analytics.google.id -}}
+{{warnf "analytics.enable %s" $id}}
+{{- if $enable -}}
+    {{- /* Google Analytics */ -}}
+    {{- with $id -}}
+        <script>
+            window.dataLayer=window.dataLayer||[];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', '{{ . }}'{{ if $analytics.google.anonymizeIP }}, { 'anonymize_ip': true }{{ end }});
+        </script>
+        {{ printf "https://www.googletagmanager.com/gtag/js?id=%v" . | dict "Async" true "Source" | partial "plugin/script.html" }}
+    {{- end -}}
+{{- end -}}
