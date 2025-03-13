@@ -1,14 +1,9 @@
-
 baseURL = 'https://linjonh.github.io/'
-languageCode = 'zh-CN'
+defaultContentLanguage = "zh-cn"
+languageCode = 'CN'
 title = '掘金小册'
 theme = "loveit"
-# Google Analytics
-
 googleAnalytics="G-DQ3LB950CS"
-
-
-ignoreFiles = ["\\.git", "\\.DS_Store", "node_modules"]
 # [markup]
 #   [markup.goldmark]
 #     [markup.goldmark.extensions]
@@ -20,14 +15,7 @@ ignoreFiles = ["\\.git", "\\.DS_Store", "node_modules"]
 #           enable = true
 #     [markup.goldmark.renderer]
 #       unsafe = true  # ✅ 直接使用布尔值
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
-# 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "zh-cn"
-# language code ["en", "zh-CN", "fr", "pl", ...]
-# 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
-# languageCode = "CN"
-# language name ["English", "简体中文", "Français", "Polski", ...]
-# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
+
 languageName = "简体中文"
 # whether to include Chinese/Japanese/Korean
 # 是否包括中日韩文字
@@ -102,8 +90,6 @@ url = "/categories/documentation/"
 title = ""
 
 [params]
-useHLJS = true
-
 BaseURL = ""
 # site default theme ["auto", "light", "dark"]
 # 网站默认主题 ["auto", "light", "dark"]
@@ -142,7 +128,6 @@ cache = { enabled = true, deny_paths = [
   "/admin",
   "/private",
 ], static_files = [
-  # "/assets/images/boy.webp",
   "/js/theme.min.js",
   "/css/style.min.css",
 ] }
@@ -297,7 +282,7 @@ enable = true
 gravatarEmail = ""
 # URL of avatar shown in home page
 # 主页显示头像的 URL
-avatarURL = "/TechBlog/assets/images/boy.webp"
+avatarURL = "/assets/images/boy.webp"
 # title shown in home page (HTML format is supported)
 # 主页显示的网站标题 (支持 HTML 格式)
 title = ""
@@ -669,7 +654,7 @@ images = []
 # 出版者信息
 [params.page.seo.publisher]
 name = "jaysen.lin"
-logoUrl = "/TechBlog/assets/images/boy.webp"
+logoUrl = "/assets/images/boy.webp"
 
 # TypeIt config
 # TypeIt 配置
@@ -820,7 +805,7 @@ priority = 0.5
 [permalinks]
 # posts = ":year/:month/:filename"
 # posts = ":filename"
-  posts = "/posts/:sections/:slug/"
+posts = "/posts/:sections/:slug/"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
