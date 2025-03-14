@@ -25,6 +25,7 @@ concurrency:
 jobs:
   build-hugo-blog:
     runs-on: ubuntu-latest
+    environment: algolia
 
     steps:
       - name: Checkout
@@ -69,8 +70,8 @@ jobs:
       #   uses: actions/upload-pages-artifact@v3
       #   with:
       #     path: public
-      # node js 上传搜索数据
-      # - name: Setup Node.js
+      # 
+      # - name: Setup Node.js #node js 上传搜索数据
       #   uses: actions/setup-node@v4
       #   with:
       #     node-version: 23
