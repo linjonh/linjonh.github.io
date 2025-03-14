@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "rm -rf public && hugo serve #--gc --minify",
-    "pro": "HUGO_ENVIRONMENT=production hugo server --gc --minify"
+    "pro": "HUGO_ENVIRONMENT=production hugo server --gc --minify",
+    "upload": "node ./upload_index_json.js"
+
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/linjonh/linjonh.github.io/issues"
   },
-  "homepage": "https://github.com/linjonh/linjonh.github.io#readme"
+  "homepage": "https://github.com/linjonh/linjonh.github.io#readme",
+  "dependencies": {
+    "algoliasearch": "^5.21.0",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7"
+  },
+  "type": "module"
 }

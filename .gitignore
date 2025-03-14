@@ -54,3 +54,6 @@ resources
 public
 node_modules
 .idea
+
+.env
+instantsearch-app

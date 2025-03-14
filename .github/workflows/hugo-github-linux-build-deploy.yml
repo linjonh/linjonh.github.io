@@ -64,6 +64,20 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+      # node js 上传搜索数据
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+
+      - name: Install node dependencies
+        run: npm install
+
+      - name: 上传索引到 algolia
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
+        run: npm run upload
 
   deploy:
     environment:

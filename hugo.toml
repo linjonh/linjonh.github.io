@@ -170,7 +170,7 @@ enable = true
 custom = ""
 # whether to show Hugo and theme info
 # 是否显示 Hugo 和主题信息
-hugo = true
+hugo = false
 # whether to show copyright info
 # 是否显示版权信息
 copyright = true
@@ -241,7 +241,7 @@ tileColor = "#da532c"
 enable = true
 # type of search engine ["lunr", "algolia"]
 # 搜索引擎的类型 ["lunr", "algolia"]
-type = "lunr"
+type = "algolia"
 # max index length of the chunked content
 # 文章内容最长索引长度
 contentLength = 4000
@@ -540,7 +540,7 @@ clientSecret = ""
 # Valine comment config (https://github.com/xCss/Valine)
 # Valine 评论系统设置 (https://github.com/xCss/Valine)
 [params.page.comment.valine]
-enable = true
+enable = false
 appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
 appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
 placeholder = ""
@@ -611,11 +611,11 @@ darkTheme = "github-dark"
 [params.page.comment.giscus]
 # You can refer to the official documentation of giscus to use the following configuration.
 # 你可以参考官方文档来使用下列配置
-enable = false
-repo = ""
-repoId = ""
+enable = true
+repo = "linjonh/blog_comment_repo"
+repoId = "R_kgDON5YUqQ"
 category = "Announcements"
-categoryId = ""
+categoryId = "DIC_kwDON5YUqc4Cm9Ln"
 # automatically adapt the current theme i18n configuration when empty
 # 为空时自动适配当前主题 i18n 配置
 lang = ""
@@ -938,8 +938,8 @@ title = "GitHub"
 
 [languages.zh-cn.params.search]
 enable = true
-type = "lunr"
-contentLength = 4000
+type = "algolia"
+contentLength = 3000
 placeholder = ""
 maxResultLength = 10
 snippetLength = 50
@@ -947,9 +947,9 @@ highlightTag = "em"
 absoluteURL = false
 
 [languages.zh-cn.params.search.algolia]
-index = "index"
-appID = "GZT24PWKNT"
-searchKey = "634ab679e825b815de2663de38908f9d"
+index = "prod_githubio_index"
+appID = "LWD9RXY9DT"
+searchKey = "496be2c0d0b37c0789b0c2ffc9602471"
 
 [languages.zh-cn.params.home]
 rss = 10
