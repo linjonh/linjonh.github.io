@@ -35,63 +35,64 @@ jobs:
           submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-      # - name: Cache Hugo Resources
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: |
-      #       resources
-      #       public
-      #     key: ${{ runner.os }}-hugo-${{ github.sha }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-hugo-
+      - name: Cache Hugo Resources
+        uses: actions/cache@v3
+        with:
+          path: |
+            resources
+            public
+          key: ${{ runner.os }}-hugo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
               
-      # - name: Setup Pages
-      #   id: pages
-      #   uses: actions/configure-pages@v4
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
       
-      # - name: 安装 Hugo
-      #   uses: peaceiris/actions-hugo@v3
-      #   with:
-      #     hugo-version: 'latest'  # 也可以指定具体版本，如 '0.123.4'
-      #     extended: true  # 是否安装扩展版（支持 SCSS/SASS）
+      - name: 安装 Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'  # 也可以指定具体版本，如 '0.123.4'
+          extended: true  # 是否安装扩展版（支持 SCSS/SASS）
           
-      # - name: show veresion
-      #   run: |
-      #     hugo version
+      - name: show veresion
+        run: |
+          hugo version
+          
       - name: show ALGOLIA_APP_ID
         run: |
           echo  "ALGOLIA_APP_ID=${{ secrets.ALGOLIA_APP_ID }}"
           echo  "ALGOLIA_WRITE_KEY=${{ secrets.ALGOLIA_WRITE_KEY }}"
 
-      # - name: Build site
-      #   run: pwd && HUGO_ENVIRONMENT=production hugo #--gc --minify &
+      - name: Build site
+        run: pwd && HUGO_ENVIRONMENT=production hugo #--gc --minify &
 
-      # - name: Upload site artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: public
-      # 
-      # - name: Setup Node.js #node js 上传搜索数据
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 23
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      
+      - name: Setup Node.js #node js 上传搜索数据
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
 
-      # - name: Install node dependencies
-      #   run: npm install
+      - name: Install node dependencies
+        run: npm install
 
-      # - name: 上传索引到 algolia
-      #   env:
-      #     ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-      #     ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
-      #   run: npm run upload
+      - name: 上传索引到 algolia
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
+        run: npm run upload
 
-  # deploy:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   needs: build-hugo-blog
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-hugo-blog
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
