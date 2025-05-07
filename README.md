@@ -1,3 +1,5 @@
+# 项目目前托管着《掘金小册》
+[网站地址](http://codelin.vip/)
 # 配置 hugo.toml 放置在主项目里，放在cofnig/_default/hugo.toml里发现会有问题，编译不出文档了。
 > 谷歌统计id需要替换
 
