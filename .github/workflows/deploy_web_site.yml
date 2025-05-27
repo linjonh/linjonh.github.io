@@ -47,7 +47,7 @@ jobs:
           ls -alh TechBlog || echo "TechBlog not found" 
           cd TechBlog
           git branch -a
-          checkout branch main
+          git checkout main
           ls -alh
       #build
       - name: Set up Ruby
@@ -62,7 +62,7 @@ jobs:
           ls -lh
           cd TechBlog
           git branch -a
-          checkout branch main
+          git checkout main
           gem install bundler
           bundle install --jobs 4 --retry 3
       - run: bundle exec jekyll build -d "_site" --trace
