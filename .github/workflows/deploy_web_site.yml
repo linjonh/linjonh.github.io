@@ -40,14 +40,14 @@ jobs:
         with:
           repository: linjonh/TechBlog
           branch: main
-          fetch-depth: 1
+          fetch-depth: 0
           path: TechBlog
       - name: List checked out files
         run: |
           ls -alh TechBlog || echo "TechBlog not found" 
           cd TechBlog
           git branch -a
-          git checkout main
+          git checkout origin/main
           ls -alh
       #build
       - name: Set up Ruby
