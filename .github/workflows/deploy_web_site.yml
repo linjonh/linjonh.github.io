@@ -39,11 +39,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: linjonh/TechBlog
-          baranch: main
+          branch: main
           fetch-depth: 1
           path: TechBlog
       - name: List checked out files
-        run: ls -alh TechBlog || echo "TechBlog not found"
+        run: |
+          ls -alh TechBlog || echo "TechBlog not found" 
+          cd TechBlog
+          git branch -a
+          checkout branch main
+          ls -alh
       #build
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -56,6 +61,8 @@ jobs:
           pwd
           ls -lh
           cd TechBlog
+          git branch -a
+          checkout branch main
           gem install bundler
           bundle install --jobs 4 --retry 3
       - run: bundle exec jekyll build -d "_site" --trace
