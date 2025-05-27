@@ -52,6 +52,8 @@ jobs:
       - name: Install dependencies
         run: |
           # cd TechBlog
+          pwd
+          ls -lh
           gem install bundler
           bundle install --jobs 4 --retry 3
       - run: bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }} --trace"
