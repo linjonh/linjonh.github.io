@@ -29,20 +29,20 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          submodules: true
-      # Checkout private repo    
-      - name: Checkout private repo
+      # - name: Checkout
+      #   uses: actions/checkout@v4
+      #   with:
+      #     fetch-depth: 1
+      #     submodules: true
+      # Checkout other repo    
+      - name: Checkout other repo
         uses: actions/checkout@v4
         with:
           repository: linjonh/TechBlog
           fetch-depth: 1
-          branch: main
-          token: ${{ secrets.PAT_TOKEN }}
           path: TechBlog
+      - name: List checked out files
+        run: ls -alh TechBlog || echo "TechBlog not found"
       #build
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -57,7 +57,7 @@ jobs:
           cd TechBlog
           gem install bundler
           bundle install --jobs 4 --retry 3
-      - run: bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }} --trace"
+      - run: bundle exec jekyll build -d "_site" --trace
         env:
           JEKYLL_ENV: production
       #Setup pages
@@ -68,7 +68,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "TechBlog/_site${{ steps.pages.outputs.base_path }}"
+          path: "TechBlog/_site"
   deploy:
     environment:
       name: github-pages
