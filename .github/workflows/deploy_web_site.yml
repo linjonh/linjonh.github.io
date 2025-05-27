@@ -56,7 +56,7 @@ jobs:
           ruby-version: '3.4.2' # 替换为你项目实际使用的版本
           bundler-cache: true
       # Install ruby dependencies
-      - name: Install dependencies
+      - name: Install dependencies and build site
         run: |
           pwd
           ls -lh
@@ -65,7 +65,8 @@ jobs:
           git checkout main
           gem install bundler
           bundle install --jobs 4 --retry 3
-      - run: bundle exec jekyll build -d "_site" --trace
+          # build site
+          bundle exec jekyll build -d "_site" --trace
         env:
           JEKYLL_ENV: production
       #Setup pages
