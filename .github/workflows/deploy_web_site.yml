@@ -51,7 +51,7 @@ jobs:
       # Install ruby dependencies
       - name: Install dependencies
         run: |
-          # cd TechBlog
+          cd TechBlog
           pwd
           ls -lh
           gem install bundler
@@ -67,7 +67,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: "TechBlog/_site${{ steps.pages.outputs.base_path }}"
   deploy:
     environment:
       name: github-pages
